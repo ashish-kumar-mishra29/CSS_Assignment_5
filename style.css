@@ -1,0 +1,419 @@
+.container {
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #515151;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+/* header section or navbar section CSS */
+header {
+  display: flex;
+  background-color: #333;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 3px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 2.5rem;
+  gap: 20px;
+}
+
+/*-------------------Front page-----------------------------*/
+.main1 {
+  background-color: #ddf0ff;
+  max-width: 100%;
+}
+
+.card h1 {
+  /* font-size: 500px; */
+  color: #333;
+}
+
+.main2 {
+  background-color: #68edb6;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0px 60px 0px 0px;
+  gap: 20px;
+}
+
+.text-container {
+  padding: 20px 0 80px 0px;
+}
+
+.image-container {
+  margin: auto 0;
+  transition-duration: 1s;
+}
+.image-container:hover {
+  box-shadow: 3px 3px 5px #333;
+}
+
+.card .learn-more-btn {
+  display: inline-block;
+  padding: 10px 30px 10px 10px;
+  background-color: #0780e0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.main2 .learn-more-btn {
+  background-color: #019558;
+}
+.card .learn-more-btn::after {
+  content: ">>";
+  font-size: 15px;
+  font-style: bold;
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s, margin-left 0.3s;
+  position: absolute;
+}
+
+.card .learn-more-btn:hover::after {
+  opacity: 1;
+  margin-left: 5px;
+}
+
+/*------------------Card Section------------------------ */
+.main3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  border: 1px solid #a19e9e;
+  border-radius: 5px;
+  padding: 15px 15px;
+  width: 170px;
+}
+
+.icon i {
+  font-size: 5px;
+  border: 1px solid #ff4cf5;
+  color: #ff4cf5;
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 20px;
+  display: inline-block;
+  transition: transform 0.7s;
+}
+
+.icon:nth-child(2) i {
+  border: 1px solid #009f7b;
+  color: #009f7b;
+}
+
+.icon:nth-child(3) i {
+  border: 1px solid #ffc31b;
+  color: #ffc31b;
+}
+
+.icon:nth-child(4) i {
+  border: 1px solid #17a8f7;
+  color: #17a8f7;
+}
+
+.icon:nth-child(5) i {
+  border: 1px solid #515151;
+  color: #515151;
+}
+
+.icon:nth-child(1):hover {
+  background-color: #ff4cf5;
+  color: white;
+}
+
+.icon:nth-child(1):hover i {
+  transform: rotate(360deg);
+  background-color: white;
+}
+
+.icon:nth-child(2):hover {
+  background-color: #009f7b;
+  color: white;
+}
+
+.icon:nth-child(2):hover i {
+  transform: rotate(360deg);
+  background-color: white;
+}
+
+.icon:nth-child(3):hover {
+  background-color: #ffc31b;
+  color: white;
+}
+
+.icon:nth-child(3):hover i {
+  transform: rotate(360deg);
+  background-color: white;
+}
+
+.icon:nth-child(4):hover {
+  background-color: #17a8f7;
+  color: white;
+}
+
+.icon:nth-child(4):hover i {
+  transform: rotate(360deg);
+  background-color: white;
+}
+
+.icon:nth-child(5):hover {
+  background-color: #515151;
+  color: white;
+}
+
+.icon:nth-child(5):hover i {
+  transform: rotate(360deg);
+  background-color: white;
+}
+
+/*---------------------- footer section CSS --------------------*/
+footer {
+  display: flex;
+  background-color: #333;
+  color: white;
+  max-width: 100%;
+  margin-top: 50px;
+}
+.footer-design {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 15rem;
+}
+
+footer h3 {
+  font-weight: 500;
+  color: #f4f4f4;
+}
+
+footer a {
+  color: #515151;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 2;
+}
+
+footer a:hover {
+  color: #f4f4f4;
+}
+
+.copyRight {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  position: relative;
+  bottom: 2.5rem;
+}
+
+.features a,
+.resources a,
+.about a {
+  position: relative;
+  bottom: 1rem;
+}
+.footer-design .git-link a {
+  color: white;
+}
+
+/*------------------------------ responsive design CSS -------------------------------------*/
+
+/*----------For Landscape view---------------*/
+@media screen and (max-width: 1280px) {
+  .icon {
+    border: 1px solid #515151;
+    border-radius: 5px;
+    padding: 15px 40px;
+    width: 250px;
+  }
+
+  .card {
+    padding: 0px 5px;
+  }
+  .card img {
+    width: auto;
+  }
+  .card h1 {
+    font-weight: unset;
+  }
+
+  .footer-design {
+    gap: 5rem;
+  }
+}
+
+/*----------For Potrait view---------------*/
+@media screen and (max-width: 800px) {
+  .footer-design {
+    display: flex;
+    gap: 7rem;
+  }
+
+  .footer-design a {
+    font-size: 12px;
+  }
+
+  .footer-design .git-link a {
+    font-size: 5px;
+  }
+  .footer-design .git-link a {
+    font-size: 20px;
+    color: white;
+    position: relative;
+  }
+}
+
+/*-----------------For Mobile view---------------*/
+@media screen and (max-width: 600px) {
+  .mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background: #212529;
+    text-align: center;
+    align-items: center;
+  }
+  .bar-icon {
+    border: 1px solid #515151;
+    color: #515151;
+    padding: 5px 20px;
+    font-size: 25px;
+    position: relative;
+    right: 0.7rem;
+  }
+
+  .card .image-container img {
+    order: -1;
+  }
+
+  .card .text-container {
+    order: 2;
+  }
+  .card,
+  .main3 {
+    display: flex;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 5px;
+  }
+
+  .card .image-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .text-container > h1 {
+    color: #333;
+    font-size: 25px;
+  }
+
+  .main3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-design {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  header {
+    display: none;
+  }
+
+  .main .image-container img {
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+  }
+
+  .icon {
+    width: fit-content;
+  }
+  .features,
+  .resources,
+  .about {
+    word-spacing: 0%;
+    position: relative;
+    bottom: 4rem;
+  }
+  .footer-design h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card .text-container {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .card .image-container img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  .copyRight {
+    position: relative;
+    bottom: 2.8rem;
+  }
+  .footer-design {
+    gap: 0rem;
+  }
+}
